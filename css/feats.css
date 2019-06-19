@@ -16,6 +16,10 @@
   padding: 16px;
 }
 
+.feat-info.open {
+  display: block;
+}
+
 .feat-name {
   background: #202936;
   color: #f2f2f2;
@@ -31,9 +35,31 @@
   margin-left: 8px;
 }
 
+.feat-more,
+.feat-expand {
+  color: #f2f2f2;
+  font-size: 24px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 4px;
+  z-index: 1;   
+}
+
 /* filters */
 .hide-combat .combat { display: none; }
 .hide-critical .critical { display: none; }
 .hide-general .general { display: none; }
 .hide-item-creation .item-creation { display: none; }
 .hide-metamagic .metamagic { display: none; }
+
+/* responsive */
+@media only screen and (max-width: 767px) {
+
+  .feat-info {
+    display: none;
+  }
+
+}

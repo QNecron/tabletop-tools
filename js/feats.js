@@ -40,24 +40,28 @@ document.addEventListener('DOMContentLoaded', function () {
         var container = document.createElement('div');
         var name = document.createElement('h3');
         var type = document.createElement('span');
+        var more = document.createElement('button');
         var info = document.createElement('div');
         var description = document.createElement('p');
         
         list.setAttribute('class', 'grid-item feat-item ' + index.feat_types.feat_type.replace(/\s+/g, '-').toLowerCase());
-        container.classList.add('feat');
+        container.classList.add('feat', 'js-feat');
         name.classList.add('feat-name');
         type.classList.add('feat-type');
-        info.classList.add('feat-info');
+        more.classList.add('feat-more', 'js-feat-expand');
+        info.classList.add('feat-info', 'js-feat-info');
         description.classList.add('feat-description');
 
         name.innerHTML = index.name;
         if (index.feat_types.feat_type != 'General') type.innerHTML = '(' + index.feat_types.feat_type + ')';
+        more.innerHTML = '<span class="srt">More info</span><i class="material-icons" aria-hidden="true">more</i>';
         description.innerHTML = index.description;
 
         feats.appendChild(list);
         list.appendChild(container);
         container.appendChild(name);
-        name.appendChild(type);
+        // name.appendChild(type); // need to figure out how to display..
+        container.appendChild(more);
         container.appendChild(info);
         info.appendChild(description);
 
@@ -112,6 +116,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       });
 
+      FEATS.featInfoSetup();
+
     },
 
     featTypeFilter: function () {
@@ -140,6 +146,26 @@ document.addEventListener('DOMContentLoaded', function () {
       element.addEventListener('click', function () {
         element.classList.toggle('hide-' + type.toLowerCase());
         parent.classList.toggle('hide-' + type.toLowerCase());
+      });
+
+    },
+
+    featInfoSetup: function () {
+      var expandContainer = document.querySelectorAll('.js-feat');
+
+      for (i = 0; i < expandContainer.length; i++) {
+        FEATS.featExpand(expandContainer[i]);
+      }
+
+    },
+
+    featExpand: function (parent) {
+      var expandTrigger = parent.querySelector('.js-feat-expand');
+      var expandInfo = parent.querySelector('.js-feat-info');
+
+      expandTrigger.addEventListener('click', function () {
+        expandTrigger.classList.toggle('open');
+        expandInfo.classList.toggle('open');
       });
 
     }
