@@ -1,0 +1,14 @@
+/* theme */
+body.dark-theme {
+  background: #121212;
+  color: #f2f2f2;
+}
+
+body.dark-theme .spell-name {
+  background: #f2f2f2;
+  color: #121212;
+}
+
+body.dark-theme .spell-expand {
+  color: #121212;
+}

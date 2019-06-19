@@ -1,0 +1,135 @@
+/* spells */
+.spell-container {
+  margin-top: 16px;
+}
+
+.spell-item {
+  box-shadow: 0 1px 3px rgba(0,0,0,.24);
+}
+
+.spell {
+  position: relative;
+}
+
+.spell-name {
+  background: #202936;
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.spell-more,
+.spell-expand {
+  color: #f2f2f2;
+  font-size: 24px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 4px;
+  z-index: 1;   
+}
+
+.spell-expand {
+  display: none;
+}
+
+.spell-expand.open .material-icons {
+  transform: scale(1, -1);
+}
+
+.spell-info {
+  font-size: 14px;
+  padding: 16px;
+}
+
+.spell-info.open {
+  display: block;
+}
+
+/* 
+.spell-school
+.spell-description-short
+*/
+
+.spell-level,
+.spell-casting-time,
+.spell-components,
+.spell-range,
+.spell-effect,
+.spell-duration,
+.spell-saving-throw,
+.spell-resistance {
+  margin-top: 4px;
+}
+
+.spell-description-short {
+  font-style: italic;
+  padding-top: 16px;
+}
+
+.spell-description-long {
+  display: none;
+}
+
+/* filters */
+.hide-abjuration .abjuration { display: none; }
+.hide-conjuration .conjuration { display: none; }
+.hide-divination .divination { display: none; }
+.hide-enchantment .enchantment { display: none; }
+.hide-evocation .evocation { display: none; }
+.hide-illusion .illusion { display: none; }
+.hide-necromancy .necromancy { display: none; }
+.hide-transmutation .transmutation { display: none; }
+.hide-universal .universal { display: none; }
+.hide-acid .acid { display: none; }
+.hide-cold .cold { display: none; }
+.hide-electricity .electricity { display: none; }
+.hide-fire .fire { display: none; }
+.hide-sonic .sonic { display: none; }
+.hide-force .force { display: none; }
+.hide-good .good { display: none; }
+.hide-evil .evil { display: none; }
+.hide-lawful .lawful { display: none; }
+.hide-chaotic .chaotic { display: none; }
+.hide-air .air { display: none; }
+.hide-earth .earth { display: none; }
+.hide-water .water { display: none; }
+.hide-light .light { display: none; }
+.hide-darkness .darkness { display: none; }
+.hide-shadow .shadow { display: none; }
+.hide-death .death { display: none; }
+.hide-pain .pain { display: none; }
+.hide-disease .disease { display: none; }
+.hide-poison .poison { display: none; }
+.hide-curse .curse { display: none; }
+.hide-emotion .emotion { display: none; }
+.hide-fear .fear { display: none; }
+.hide-mind-affecting .mind-affecting { display: none; }
+.hide-bard .spell-item:not(.bard) { display: none; }
+.hide-cleric .spell-item:not(.cleric) { display: none; }
+.hide-druid .spell-item:not(.druid) { display: none; }
+.hide-paladin .spell-item:not(.paladin) { display: none; }
+.hide-ranger .spell-item:not(.ranger) { display: none; }
+.hide-sorcerer .spell-item:not(.sorcerer) { display: none; }
+.hide-wizard .spell-item:not(.wizard) { display: none; }
+
+/* responsive */
+@media only screen and (max-width: 767px) {
+
+  .spell-more {
+    right: calc(4px + 40px + 4px);
+  }
+
+  .spell-expand {
+    display: flex;
+  }
+
+  .spell-info {
+    display: none;
+  }
+
+}

@@ -1,0 +1,39 @@
+/* feats */
+.feat-container {
+  margin-top: 16px;
+}
+
+.feat-item {
+  box-shadow: 0 1px 3px rgba(0,0,0,.24);
+}
+
+.feat {
+  position: relative;
+}
+
+.feat-info {
+  font-size: 14px;
+  padding: 16px;
+}
+
+.feat-name {
+  background: #202936;
+  color: #f2f2f2;
+  display: flex;
+  font-size: 14px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.feat-type {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+/* filters */
+.hide-combat .combat { display: none; }
+.hide-critical .critical { display: none; }
+.hide-general .general { display: none; }
+.hide-item-creation .item-creation { display: none; }
+.hide-metamagic .metamagic { display: none; }

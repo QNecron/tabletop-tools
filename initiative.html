@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta name="theme-color" content="#121820">
+  <meta name="description" content="Initiative tool for Pathfinder 1e, easily setup your encounters and never loose track of order again.">
+  <title>Initiative | Tabletop Tools</title>
+  <link rel="icon" type="image/png" href="images/favicon-48.png">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/core.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/tools.css">
+  <link rel="stylesheet" type="text/css" href="css/feats.css">
+  <link rel="stylesheet" type="text/css" href="css/spells.css">
+  <link rel="stylesheet" type="text/css" href="css/initiative.css">
+</head>
+<body>
+
+  <!-- header -->
+  <header class="header" role="banner">
+
+    <div class="wrapper">
+
+      <nav class="nav-primary" role="navigation">
+      
+        <button class="nav-primary-link" data-micromodal-trigger="menu">
+          <i class="material-icons" aria-hidden="true">menu</i>
+          <span class="nav-filter-name">Menu</span>
+        </button>
+      
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main role="main">
+
+    <!-- hero -->
+    <section class="section section-hero" role="region">
+
+      <div class="hero">
+        <!-- wish I could proper give credit / copyright -->
+        <img class="hero-img js-hero" src="images/placeholder-16-9.svg" alt="Welcome to Tabletop Tools - Pathdinder">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <img class="hero-logo" src="images/logo-paizo-pathfinder-2e.png" alt="Paizo, Pathfinder">
+        <h1 class="hero-title">Tools for Pathfinder</h1>
+      </div>
+
+    </section>
+
+    <!-- initiative -->
+    <section class="section" role="region">
+
+      <div class="wrapper">
+
+        <h2 class="heading-2">Initiative</h2>
+
+        <div class="init-container">
+
+          <div class="grid-container init-order-name" grid="3">
+
+            <div class="grid-item init-form js-init">
+              <label for="order1" class="srt">PC/NPC 1 Initiative Roll</label>
+              <input type="number" id="order1" class="init-form-number js-init-order">
+              <label for="name1" class="srt">PC/NPC 1 Name</label>
+              <input type="text" id="name1" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order2" class="srt">PC/NPC 2 Initiative Roll</label>
+              <input type="number" id="order2" class="init-form-number js-init-order">
+              <label for="name2" class="srt">PC/NPC 2 Name</label>
+              <input type="text" id="name2" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order3" class="srt">PC/NPC 3 Initiative Roll</label>
+              <input type="number" id="order3" class="init-form-number js-init-order">
+              <label for="name3" class="srt">PC/NPC 3 Name</label>
+              <input type="text" id="name3" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order4" class="srt">PC/NPC 4 Initiative Roll</label>
+              <input type="number" id="order4" class="init-form-number js-init-order">
+              <label for="name4" class="srt">PC/NPC 4 Name</label>
+              <input type="text" id="name4" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order5" class="srt">PC/NPC 5 Initiative Roll</label>
+              <input type="number" id="order5" class="init-form-number js-init-order">
+              <label for="name5" class="srt">PC/NPC 5 Name</label>
+              <input type="text" id="name5" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order6" class="srt">PC/NPC 6 Initiative Roll</label>
+              <input type="number" id="order6" class="init-form-number js-init-order">
+              <label for="name6" class="srt">PC/NPC 6 Name</label>
+              <input type="text" id="name6" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order7" class="srt">PC/NPC 7 Initiative Roll</label>
+              <input type="number" id="order7" class="init-form-number js-init-order">
+              <label for="name7" class="srt">PC/NPC 7 Name</label>
+              <input type="text" id="name7" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order8" class="srt">PC/NPC 8 Initiative Roll</label>
+              <input type="number" id="order8" class="init-form-number js-init-order">
+              <label for="name8" class="srt">PC/NPC 8 Name</label>
+              <input type="text" id="name8" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order9" class="srt">PC/NPC 9 Initiative Roll</label>
+              <input type="number" id="order9" class="init-form-number js-init-order">
+              <label for="name9" class="srt">PC/NPC 9 Name</label>
+              <input type="text" id="name9" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order10" class="srt">PC/NPC 10 Initiative Roll</label>
+              <input type="number" id="order10" class="init-form-number js-init-order">
+              <label for="name10" class="srt">PC/NPC 10 Name</label>
+              <input type="text" id="name10" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order11" class="srt">PC/NPC 11 Initiative Roll</label>
+              <input type="number" id="order11" class="init-form-number js-init-order">
+              <label for="name11" class="srt">PC/NPC 11 Name</label>
+              <input type="text" id="name11" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-form js-init">
+              <label for="order12" class="srt">PC/NPC 12 Initiative Roll</label>
+              <input type="number" id="order12" class="init-form-number js-init-order">
+              <label for="name12" class="srt">PC/NPC 12 Name</label>
+              <input type="text" id="name12" class="init-form-name js-init-name">
+            </div>
+
+            <div class="grid-item init-actions">
+              <button class="btn init-submit js-init-submit" data-micromodal-trigger="initiative">Initiative Order</button>
+              <button class="btn init-submit js-init-help" data-micromodal-trigger="initiative-help">How To</button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <p>At the start of a battle, each combatant makes an initiative check. An initiative check is a Dexterity check. Each
+        character applies his or her Dexterity modifier to the roll, as well as other modifiers from feats, spells, and other
+        effects. Characters act in order, counting down from the highest result to the lowest. In every round that follows, the
+        characters act in the same order.</p>
+        
+        <p>If two or more combatants have the same initiative check result, the combatants who are tied act in order of total
+        initiative modifier (highest first). If there is still a tie, the tied characters should roll to determine which one of
+        them goes before the other.</p>        
+
+      </div>
+
+    </section>
+
+    <!-- copyright -->
+    <section class="section section-copyright" role="region">
+
+      <div class="wrapper">
+
+        <p class="copyright">
+          This website uses trademarks and/or copyrights owned by Paizo Publishing, LLC, which are used under Paizo's Community
+          Use Policy. We are expressly prohibited from charging you to use or access this content. This website is not published,
+          endorsed, or specifically approved by Paizo Publishing. For more information about Paizo's Community Use Policy, please
+          visit paizo.com/communityuse. For more information about Paizo Publishing and Paizo products, please visit 
+          <a href="https://paizo.com" target="_blank" rel="noopener noreferrer">paizo.com</a>.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer" role="contentinfo">
+
+    <div class="wrapper">
+      &copy; 2019 Tabletop Tools
+    </div>
+
+  </footer>
+
+  <!-- menu -->
+  <div id="menu" class="dialog-container" aria-hidden="true">
+  
+    <div class="dialog-overlay" tabindex="-1" data-micromodal-close>
+  
+      <nav class="nav-site" role="navigation">
+  
+        <button class="nav-close" data-micromodal-close>
+          <span class="srt">Close menu</span>
+          <i class="material-icons" aria-hidden="true" data-micromodal-close>close</i>
+        </button>
+ 
+        <a href="/" class="btn-a nav-site-link">Home</a>
+        <a href="initiative.html" class="btn-a nav-site-link">Initiative</a>
+        <a href="feats.html" class="btn-a nav-site-link">Feats</a>
+        <a href="spells.html" class="btn-a nav-site-link">Spells</a>
+  
+      </nav>
+  
+    </div>
+  
+  </div>
+
+  <!-- initiative -->
+  <div id="initiative" class="dialog-container" aria-hidden="true">
+  
+    <div class="dialog-overlay" tabindex="-1" data-micromodal-close>
+  
+      <nav class="nav-secondary" role="navigation">
+  
+        <button class="nav-close" data-micromodal-close>
+          <span class="srt">Close filters</span>
+          <i class="material-icons" aria-hidden="true" data-micromodal-close>close</i>
+        </button>
+  
+        <h3 class="heading-3 nav-secondary-title">Initiative Order</h3>
+        <ol class="init-list js-init-list"></ol>
+  
+      </nav>
+  
+    </div>
+  
+  </div>
+
+  <!-- initiative : help -->
+  <div id="initiative-help" class="dialog-container" aria-hidden="true">
+  
+    <div class="dialog-overlay" tabindex="-1" data-micromodal-close>
+  
+      <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  
+        <header role="banner">
+  
+          <h3 id="modal-title" class="dialog-title js-modal-title">Initiative How To</h3>
+  
+          <button class="dialog-close" aria-label="Close modal" data-micromodal-close>
+            <i class="material-icons" aria-hidden="true" data-micromodal-close>close</i>
+          </button>
+  
+        </header>
+  
+        <div id="modal-content" class="dialog-content js-modal-content">
+
+          <div class="init-form">
+            <label for="order0" class="srt">PC/NPC 0 Initiative Roll</label>
+            <input type="number" id="order0" class="init-form-number js-init-order" value="17">
+            <label for="name0" class="srt">PC/NPC 0 Name</label>
+            <input type="text" id="name0" class="init-form-name js-init-name" value="Balor">
+          </div>
+
+          <p>The first field (smaller) represents the player's or GM's roll for initiative.</p>
+          
+          <p>The second field is the label, name or whatever you would like to tag the initiative roll next to it</p>
+
+          <p>Once you've filled out what you need simply press the <strong>Initiative Order</strong> button and it will 
+          do all the work for you. It will order the players and NPCs from highest to lowest.</p>
+
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+
+  <!-- js -->
+  <script type="text/javascript" src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/accordion.js"></script>
+  <script type="text/javascript" src="js/sticky.js"></script>
+  <script type="text/javascript" src="js/parallax.js"></script>
+  <script type="text/javascript" src="js/feats.js"></script>
+  <script type="text/javascript" src="js/spells.js"></script>
+  <script type="text/javascript" src="js/initiative.js"></script>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Material+Icons&display=swap" rel="stylesheet">
+
+</body>
+</html>

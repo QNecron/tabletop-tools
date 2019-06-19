@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta name="theme-color" content="#121820">
+  <meta name="description" content="Filtering tool for Pathfinder 1e feats; combat, metamagic, and item creation.">
+  <title>Feats | Tabletop Tools</title>
+  <link rel="icon" type="image/png" href="images/favicon-48.png">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/core.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/tools.css">
+  <link rel="stylesheet" type="text/css" href="css/feats.css">
+  <link rel="stylesheet" type="text/css" href="css/spells.css">
+  <link rel="stylesheet" type="text/css" href="css/initiative.css">
+</head>
+<body>
+
+  <!-- header -->
+  <header class="header" role="banner">
+
+    <div class="wrapper">
+
+      <nav class="nav-primary" role="navigation">
+      
+        <button class="nav-primary-link" data-micromodal-trigger="menu">
+          <i class="material-icons" aria-hidden="true">menu</i>
+          <span class="nav-filter-name">Menu</span>
+        </button>
+      
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main role="main">
+
+    <!-- hero -->
+    <section class="section section-hero" role="region">
+
+      <div class="hero">
+        <!-- wish I could proper give credit / copyright -->
+        <img class="hero-img js-hero" src="images/placeholder-16-9.svg" alt="Welcome to Tabletop Tools - Pathdinder">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <img class="hero-logo" src="images/logo-paizo-pathfinder-2e.png" alt="Paizo, Pathfinder">
+        <h1 class="hero-title">Tools for Pathfinder</h1>
+      </div>
+
+    </section>
+
+    <!-- feats -->
+    <section class="section" role="region">
+
+      <div class="wrapper">
+
+        <div class="heading-nav-filter">
+
+          <h2 class="heading-2">Feats</h2>
+
+          <nav class="nav-filter-container" role="navigation">
+
+            <div class="nav-filter-sticky js-sticky">
+
+              <button class="nav-filter-link" data-micromodal-trigger="filter-feats">
+                <i class="material-icons" aria-hidden="true">notes</i>
+                <span class="nav-filter-name">Filters</span>
+              </button>
+
+            </div>
+
+          </nav>
+
+        </div>
+
+        <ul class="grid-container feat-container js-feat-list" grid="2"></ul>
+ 
+      </div>
+
+    </section>
+
+    <!-- copyright -->
+    <section class="section section-copyright" role="region">
+
+      <div class="wrapper">
+
+        <p class="copyright">
+          This website uses trademarks and/or copyrights owned by Paizo Publishing, LLC, which are used under Paizo's Community
+          Use Policy. We are expressly prohibited from charging you to use or access this content. This website is not published,
+          endorsed, or specifically approved by Paizo Publishing. For more information about Paizo's Community Use Policy, please
+          visit paizo.com/communityuse. For more information about Paizo Publishing and Paizo products, please visit 
+          <a href="https://paizo.com" target="_blank" rel="noopener noreferrer">paizo.com</a>.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer" role="contentinfo">
+
+    <div class="wrapper">
+      &copy; 2019 Tabletop Tools
+    </div>
+
+  </footer>
+
+  <!-- menu -->
+  <div id="menu" class="dialog-container" aria-hidden="true">
+  
+    <div class="dialog-overlay" tabindex="-1" data-micromodal-close>
+  
+      <nav class="nav-site" role="navigation">
+  
+        <button class="nav-close" data-micromodal-close>
+          <span class="srt">Close menu</span>
+          <i class="material-icons" aria-hidden="true" data-micromodal-close>close</i>
+        </button>
+  
+        <a href="/" class="btn-a nav-site-link">Home</a>
+        <a href="initiative.html" class="btn-a nav-site-link">Initiative</a>
+        <a href="feats.html" class="btn-a nav-site-link">Feats</a>
+        <a href="spells.html" class="btn-a nav-site-link">Spells</a>
+  
+      </nav>
+  
+    </div>
+  
+  </div>
+
+  <!-- filter : feats -->
+  <div id="filter-feats" class="dialog-container" aria-hidden="true">
+  
+    <div class="dialog-overlay" tabindex="-1" data-micromodal-close>
+  
+      <nav class="nav-secondary" role="navigation">
+  
+        <button class="nav-close" data-micromodal-close>
+          <span class="srt">Close filters</span>
+          <i class="material-icons" aria-hidden="true" data-micromodal-close>close</i>
+        </button>
+
+        <h3 class="heading-3 nav-secondary-title">Types</h3>
+        <div class="filter-feat-type js-filter-type"></div>
+
+      </nav>
+  
+    </div>
+  
+  </div>
+
+  <!-- js -->
+  <script type="text/javascript" src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/accordion.js"></script>
+  <script type="text/javascript" src="js/sticky.js"></script>
+  <script type="text/javascript" src="js/parallax.js"></script>
+  <script type="text/javascript" src="js/feats.js"></script>
+  <script type="text/javascript" src="js/spells.js"></script>
+  <script type="text/javascript" src="js/initiative.js"></script>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Material+Icons&display=swap" rel="stylesheet">
+
+</body>
+</html>
