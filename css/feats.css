@@ -35,7 +35,6 @@
   margin-left: 8px;
 }
 
-.feat-more,
 .feat-expand {
   color: #f2f2f2;
   font-size: 24px;
@@ -48,6 +47,10 @@
   z-index: 1;   
 }
 
+.feat-expand {
+  display: none;
+}
+
 /* filters */
 .hide-combat .combat { display: none; }
 .hide-critical .critical { display: none; }
@@ -57,6 +60,10 @@
 
 /* responsive */
 @media only screen and (max-width: 767px) {
+
+  .feat-expand {
+    display: flex;
+  }
 
   .feat-info {
     display: none;
