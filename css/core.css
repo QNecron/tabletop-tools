@@ -391,14 +391,19 @@ textarea:focus {
   }
 
   .section-hero {
-    padding-bottom: 75%;
+    padding-bottom: 60%;
   }
 
   .hero-img {
     height: 56vh;
     width: auto;
     max-width: inherit;
-    top: 0;
+    top: 48px;
+  }
+
+  .hero-logo {
+    margin: 0 auto;
+    max-width: 80%;
   }
 
   .hero-title {

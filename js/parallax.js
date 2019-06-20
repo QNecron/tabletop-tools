@@ -6,18 +6,20 @@ document.addEventListener('DOMContentLoaded', function () {
       var hero = document.querySelector('.js-hero');
       var random = Math.floor(Math.random() * 6) + 1;
       var img = [
-        'images/hero/hero-01.jpg',
-        'images/hero/hero-02.jpg',
-        'images/hero/hero-03.jpg',
-        'images/hero/hero-04.jpg',
-        'images/hero/hero-05.jpg',
-        'images/hero/hero-06.jpg'
+        'images/hero/hero-01',
+        'images/hero/hero-02',
+        'images/hero/hero-03',
+        'images/hero/hero-04',
+        'images/hero/hero-05',
+        'images/hero/hero-06'
       ];
 
-      hero.setAttribute('src', img[random - 1].toString());
+      var src = img[random - 1].toString();
+      hero.querySelector('source').setAttribute('srcset', src + '-mobile.jpg');
+      hero.querySelector('img').setAttribute('src', src + '.jpg');
 
       if (window.innerWidth >= 768) {
-        PARALLAX.parallaxScroll(hero);
+        PARALLAX.parallaxScroll(hero.querySelector('img'));
       }
 
     },
