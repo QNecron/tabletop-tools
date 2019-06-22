@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
       var feat2 = document.querySelector('.js-magic-greater-focus');
       var calc = document.querySelector('.js-magic-calc');
 
+      if (!calc) return;
+
       calc.addEventListener('click', function () {
 
         var mod = COMBAT.casterModifier(parseInt(attribute.value));
