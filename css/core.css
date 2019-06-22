@@ -94,6 +94,18 @@ button:disabled {
   cursor: not-allowed;
 }
 
+label {
+  font-weight: 700;
+}
+
+label::selection {
+  background: transparent;
+}
+
+label::-moz-selection {
+  background: transparent;
+}
+
 input,
 select,
 textarea {
@@ -113,6 +125,80 @@ select:hover,
 textarea:focus,
 textarea:focus {
   border-color: #470f0b;
+}
+
+input[type="checkbox"] {
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+  position: absolute;
+}
+
+input[type="checkbox"]:focus ~ .input-label,
+input[type="checkbox"]:focus ~ .input-checkbox,
+input[type="checkbox"]:hover ~ .input-label,
+input[type="checkbox"]:hover ~ .input-checkbox {
+  color: #470f0b;
+}
+
+input[type="checkbox"]:checked ~ .input-checkbox .check {
+  display: flex;
+}
+
+.input-label,
+.input-checkbox {
+  transition: all .24s ease-in-out 0s;
+}
+
+.input-container ~ .input-container {
+  margin-top: 8px;
+}
+
+.input-type-checkbox {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.input-type-checkbox .input-label {
+  cursor: pointer;
+  padding-left: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.input-checkbox {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.input-checkbox .material-icons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.input-checkbox .check {
+  display: none;
+}
+
+.input-type-number,
+.input-type-text {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.input-type-number .input-label,
+.input-type-text .input-label {
+  margin-bottom: 4px;
 }
 
 /* forms */
@@ -291,6 +377,10 @@ textarea:focus {
 
 [grid="4"] .grid-item {
   grid-column: span 3;
+}
+
+.grid-item {
+  position: relative;
 }
 
 /* accordion */

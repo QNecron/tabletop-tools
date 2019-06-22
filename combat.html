@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta name="theme-color" content="#121820">
-  <meta name="description" content="Tools for Pathfinder 1e tabletop gaming; initiative tool, spells, feats, skills and more.">
-  <title>Tabletop Tools</title>
+  <meta name="description" content="Tools for Pathfinder 1e tabletop gaming; magical and melee combat.">
+  <title>Combat | Tabletop Tools</title>
   <link rel="icon" type="image/png" href="images/favicon-48.png">
   <link rel="stylesheet" type="text/css" href="css/normalize.css?date=2019-06-22">
   <link rel="stylesheet" type="text/css" href="css/fonts.css?date=2019-06-22">
@@ -16,8 +16,9 @@
   <link rel="stylesheet" type="text/css" href="css/feats.css?date=2019-06-22">
   <link rel="stylesheet" type="text/css" href="css/spells.css?date=2019-06-22">
   <link rel="stylesheet" type="text/css" href="css/combat.css?date=2019-06-22">
-  <link rel="stylesheet" type="text/css" href="css/initiative.css?date=2019-06-22">>
+  <link rel="stylesheet" type="text/css" href="css/initiative.css?date=2019-06-22">
 </head>
+
 <body>
 
   <!-- header -->
@@ -59,98 +60,84 @@
 
     </section>
 
-    <!-- intro -->
+    <!-- magical -->
     <section class="section" role="region">
-
+    
       <div class="wrapper">
 
-        <h2 class="heading-2">Tabletop Tools</h2>
+        <h2 class="heading-2">Magical</h2>
 
-        <p class="heading-paragraph">Welcome to Tabletop Tools, below you'll find several tools that will hopefull help you as they've helped me during
-        my gaming sessions. Currently there is Spells filter, only Core at this time, and a handy little Initiative tool that
-        will take your PC's and NPC's rolls and order them for you automatically.</p>
+        <p class="heading-paragraph">Fill out your appropriate attribute score below, the spell
+        level of the spell you want to know about, then check which <em>(if any)</em> feats you have 
+        that would impact the spell DC. Upon calculation you will receive the following information:
+        your attribute modifier, the spell level, the spell DC, and a complete list of bonus spell
+        slots/castings your character should have.</p>
 
-        <p>This toolset is made to be mobile friendly <em>(phone &amp; tablets)</em> and I'm working on getting it to be as fast as possible. Please be patient if you
-        happen to encounter a bug, I do this in my free time due to my tabletop gaming passion so I won't be able to address everything quickly.</p>
+        <div class="magical-container">
 
-        <ul class="grid-container tools-container" grid="4">
+          <div class="grid-container ???-order-name" grid="2">
 
-          <li class="grid-item tool-item">
-            <a class="btn-a tool-item-link" href="initiative.html">Initiative Tool</a>
-          </li>
+            <div class="grid-item">
+              <div class="input-container input-type-number">
+                <input id="attribute" class="js-magic-attribute" type="number">
+                <label for="attribute" class="input-label">Attribute</label>
+              </div>
+            </div>
 
-          <li class="grid-item tool-item">
-            <a class="btn-a tool-item-link" href="spells.html">Spell List</a>
-          </li>
+            <div class="grid-item">
+              <div class="input-container input-type-number">
+                <input id="level" class="js-magic-spell-level" type="number">
+                <label for="level" class="input-label">Spell Level</label>
+              </div>
+            </div>
 
-          <li class="grid-item tool-item">
-            <a class="btn-a tool-item-link" href="feats.html">Feats</a>
-          </li>
+            <div class="grid-item">
+              <div class="input-container input-type-checkbox">
+                <input id="focus" class="js-magic-focus" type="checkbox">
+                <label for="focus" class="input-label">Spell Focus</label>
+                <div class="input-checkbox">
+                  <i class="material-icons box" aria-hidden="true">check_box_outline_blank</i>
+                  <i class="material-icons check" aria-hidden="true">check_box</i>
+                </div>
+              </div>
+              <div class="input-container input-type-checkbox">
+                <input id="greater-focus" class="js-magic-greater-focus" type="checkbox">
+                <label for="greater-focus" class="input-label">Greater Spell Focus</label>
+                <div class="input-checkbox">
+                  <i class="material-icons box" aria-hidden="true">check_box_outline_blank</i>
+                  <i class="material-icons check" aria-hidden="true">check_box</i>
+                </div>
+              </div>
+            </div>
 
-          <li class="grid-item tool-item coming-soon">
-            <div class="tool-item-link">Skills</div>
-            <div class="tool-item-info">Soon&trade;</div>
-          </li>
+            <div class="grid-item"></div>
 
-          <li class="grid-item tool-item coming-soon">
-            <div class="tool-item-link">Combat</div>
-            <div class="tool-item-info">Soon&trade;</div>
-          </li>
+            <div class="grid-item magical-actions">
+              <button class="btn js-magic-calc" data-micromodal-trigger="magical">Magical Bonuses</button>
+            </div>
 
-          <li class="grid-item tool-item coming-soon">
-            <div class="tool-item-link">Classes</div>
-            <div class="tool-item-info">Soon&trade;</div>
-          </li>
+          </div>
 
-          <li class="grid-item tool-item coming-soon">
-            <div class="tool-item-link">Bestiary</div>
-            <div class="tool-item-info">Soon&trade;</div>
-          </li>
+        </div>
 
-          <li class="grid-item tool-item coming-soon">
-            <div class="tool-item-link">Maps</div>
-            <div class="tool-item-info">Soon&trade;</div>
-          </li>
-
-        </ul>
+        <p>The ability that governs bonus spells depends on what type
+        of spellcaster your character is: Intelligence for wizards; Wisdom for clerics, druids,
+        and rangers; and Charisma for bards, paladins, and sorcerers. In addition to having a
+        high ability score, a spellcaster must be of a high enough class level to be able to
+        cast spells of a given spell level.</p>
 
       </div>
 
     </section>
 
-    <!-- others -->
+    <!-- melee -->
     <section class="section" role="region">
-
+    
       <div class="wrapper">
 
-        <h2 class="heading-2">Other Useful Tools</h2>
+        <h2 class="heading-2">Melee</h2>
 
-        <p class="heading-paragraph">Below is a list of tools I've used over the past two years working on various campaigns. They've be infinitely 
-        useful to me, hopefully if you haven't heard or tried any of them before you'll give them a try.</p>
-
-        <ul class="grid-container tools-container" grid="4">
-
-          <li class="grid-item tool-item">
-            <a class="btn-a tool-item-link" href="https://deepnight.net/tools/rpg-map/" target="_blank" rel="noopener noreferrer">Deepnight</a>
-            <div class="tool-item-info"><i class="material-icons">link</i></div>
-          </li>
-
-          <li class="grid-item tool-item">
-            <a class="btn-a tool-item-link" href="https://inkarnate.com" target="_blank" rel="noopener noreferrer">Inkarnate</a>
-            <div class="tool-item-info"><i class="material-icons">link</i></div>
-          </li>
-
-          <li class="grid-item tool-item">
-            <a class="btn-a tool-item-link" href="http://www.trovetokens.com/pathfinder.html" target="_blank" rel="noopener noreferrer">Trovetokens</a>
-            <div class="tool-item-info"><i class="material-icons">link</i></div>
-          </li>
-
-          <li class="grid-item tool-item">
-            <a class="btn-a tool-item-link" href="https://www.fantasynamegenerators.com/" target="_blank" rel="noopener noreferrer">Fantasy Names</a>
-            <div class="tool-item-info"><i class="material-icons">link</i></div>
-          </li>
-
-        </ul>
+        <p class="heading-paragraph">Calculations for attacks, grapple, trip, disarm, etc, coming soon!</p>
 
       </div>
 
@@ -208,6 +195,44 @@
   
   </div>
 
+  <!-- magical -->
+  <div id="magical" class="dialog-container" aria-hidden="true">
+  
+    <div class="dialog-overlay" tabindex="-1" data-micromodal-close>
+  
+      <nav class="nav-secondary" role="navigation">
+  
+        <button class="nav-close" data-micromodal-close>
+          <span class="srt">Close magical calculations</span>
+          <i class="material-icons" aria-hidden="true" data-micromodal-close>close</i>
+        </button>
+  
+        <h3 class="heading-3 nav-secondary-title">Magical Calculations</h3>
+        
+        <div class="magical-bonuses">
+          <strong class="magical-bonus-name">Modifier</strong>
+          <div class="magical-bonus-calc js-magical-calc-modifier">0</div>
+        </div>
+
+        <div class="magical-bonuses">
+          <strong class="magical-bonus-name">Spell Level</strong>
+          <div class="magical-bonus-calc js-magical-calc-spell-lvl">0</div>
+        </div>
+
+        <div class="magical-bonuses">
+          <strong class="magical-bonus-name">Spell DC</strong>
+          <div class="magical-bonus-calc js-magical-calc-spell-dc">0</div>
+        </div>
+
+        <h3 class="header-3 nav-secondary-title">Bonus Spells</h3>
+        <ul class="magical-bonus-spells js-magical-calc-bonuses"></ul>
+  
+      </nav>
+  
+    </div>
+  
+  </div>
+
   <!-- js -->
   <script type="text/javascript" src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script type="text/javascript" src="js/menu.js?date=2019-06-22"></script>
@@ -217,7 +242,7 @@
   <script type="text/javascript" src="js/feats.js?date=2019-06-22"></script>
   <script type="text/javascript" src="js/spells.js?date=2019-06-22"></script>
   <script type="text/javascript" src="js/combat.js?date=2019-06-22"></script>
-  <script type="text/javascript" src="js/initiative.js?date=2019-06-22"></script>>
+  <script type="text/javascript" src="js/initiative.js?date=2019-06-22"></script>
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Material+Icons&display=swap" rel="stylesheet">

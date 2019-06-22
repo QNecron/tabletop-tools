@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         var data = JSON.parse(this.response);
-        console.log(data);
+        // console.log(data);
         var feats = document.querySelector('.js-feat-list');
         if (!feats) return;
 
