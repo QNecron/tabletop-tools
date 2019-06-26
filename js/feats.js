@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         list.setAttribute('class', 'grid-item feat-item ' + index.feat_types.feat_type.replace(/\s+/g, '-').toLowerCase());
         container.classList.add('feat', 'js-feat');
-        name.classList.add('feat-name');
+        name.classList.add('feat-name', 'js-name');
         type.classList.add('feat-type');
         more.classList.add('feat-expand', 'js-feat-expand');
         info.classList.add('feat-info', 'js-feat-info');

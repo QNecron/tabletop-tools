@@ -360,6 +360,61 @@ input[type="checkbox"]:checked ~ .input-checkbox .check {
   text-shadow: 0 1px 3px rgba(0,0,0,.64);
 }
 
+/* search */
+.section-search {
+  background: black;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.search-container {
+  margin: 0 auto;
+  width: 640px;
+  max-width: 88vw;
+  position: relative;
+}
+
+.search-container .material-icons {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.search {
+  background: rgba(255,255,255,.04);
+  border-color: #202936;
+  box-shadow: 0 0 4px #202936;
+  color: #f2f2f2;
+  position: relative;
+  z-index: 3;
+}
+
+.search:focus,
+.search:hover {
+  box-shadow: 0 0 4px #470f0b;
+}
+
+.search:focus ~ .material-icons {
+  color: rgba(255,255,255,.16);
+}
+
+.search::-webkit-input-placeholder { color: #f2f2f2; font-style: italic; }
+.search::-moz-placeholder { color: #f2f2f2; font-style: italic; }
+.search:-ms-input-placeholder { color: #f2f2f2; font-style: italic; }
+.search:-moz-placeholder { color: #f2f2f2; font-style: italic; }
+
+.search:focus::-webkit-input-placeholder { color: rgba(255,255,255,.16); }
+.search:focus::-moz-placeholder { color: rgba(255,255,255,.16); }
+.search:focus:-ms-input-placeholder { color: rgba(255,255,255,.16); }
+.search:focus:-moz-placeholder { color: rgba(255,255,255,.16); }
+
 /* grid */
 .grid-container {
   display: grid;
@@ -411,7 +466,7 @@ input[type="checkbox"]:checked ~ .input-checkbox .check {
 }
 
 .dialog {
-  background: #fff;
+  background: #f2f2f2;
   box-shadow: 0 1px 3px rgba(0,0,0,.24);
   width: 512px;
   max-width: 88vw;
