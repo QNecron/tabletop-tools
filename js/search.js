@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     init: function() {
       var search = document.querySelector('.js-search');
+      var result = document.querySelector('.js-filter-result');
+
+      if (!search) return;
 
       search.addEventListener('keyup', function() {
         var item = document.querySelectorAll('.grid-item');
@@ -25,7 +28,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
 
+        SEARCH.searchEmpty(result, item);
+
       });
+
+    },
+
+    searchEmpty: function(container, ele) {
+      var count = 0;
+
+      for (i = 0; i < ele.length; i++) {
+
+        if (ele[i].classList.contains('is-hidden')) {
+          count++;
+        }
+
+      }
+
+      if (ele.length == count) {
+        container.classList.add('is-empty');
+      }
+      else if (container.classList.contains('is-empty')) {
+        container.classList.remove('is-empty');
+      }
 
     }
 

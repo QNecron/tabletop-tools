@@ -41,84 +41,18 @@
 
   <main role="main">
 
-    <!-- hero -->
-    <section class="section section-hero" role="region">
-
-      <div class="hero">
-        <!-- wish I could proper give credit / copyright -->
-        <picture class="hero-img js-hero">
-          <source srcset="images/placeholder-16-9.svg" media="(max-width: 767px)">
-          <img src="images/placeholder-16-9.svg" alt="Welcome to Tabletop Tools - Pathdinder">
-        </picture>
-        <div class="hero-overlay"></div>
-      </div>
-
-      <div class="hero-content">
-        <img class="hero-logo" src="images/logo-paizo-pathfinder-2e.png" alt="Paizo, Pathfinder">
-        <h1 class="hero-title">Tools for Pathfinder</h1>
-      </div>
-
-    </section>
-
     <!-- magical -->
-    <section class="section" role="region">
+    <section class="section section-header" role="region">
     
       <div class="wrapper">
 
-        <h2 class="heading-2">Magical</h2>
+        <h1 class="heading-2">Magical</h1>
 
         <p class="heading-paragraph">Fill out your appropriate attribute score below, the spell
         level of the spell you want to know about, then check which <em>(if any)</em> feats you have 
         that would impact the spell DC. Upon calculation you will receive the following information:
         your attribute modifier, the spell level, the spell DC, and a complete list of bonus spell
         slots/castings your character should have.</p>
-
-        <div class="magical-container">
-
-          <div class="grid-container ???-order-name" grid="2">
-
-            <div class="grid-item">
-              <div class="input-container input-type-number">
-                <input id="attribute" class="js-magic-attribute" type="number">
-                <label for="attribute" class="input-label">Attribute</label>
-              </div>
-            </div>
-
-            <div class="grid-item">
-              <div class="input-container input-type-number">
-                <input id="level" class="js-magic-spell-level" type="number">
-                <label for="level" class="input-label">Spell Level</label>
-              </div>
-            </div>
-
-            <div class="grid-item">
-              <div class="input-container input-type-checkbox">
-                <input id="focus" class="js-magic-focus" type="checkbox">
-                <label for="focus" class="input-label">Spell Focus</label>
-                <div class="input-checkbox">
-                  <i class="material-icons box" aria-hidden="true">check_box_outline_blank</i>
-                  <i class="material-icons check" aria-hidden="true">check_box</i>
-                </div>
-              </div>
-              <div class="input-container input-type-checkbox">
-                <input id="greater-focus" class="js-magic-greater-focus" type="checkbox">
-                <label for="greater-focus" class="input-label">Greater Spell Focus</label>
-                <div class="input-checkbox">
-                  <i class="material-icons box" aria-hidden="true">check_box_outline_blank</i>
-                  <i class="material-icons check" aria-hidden="true">check_box</i>
-                </div>
-              </div>
-            </div>
-
-            <div class="grid-item"></div>
-
-            <div class="grid-item magical-actions">
-              <button class="btn js-magic-calc" data-micromodal-trigger="magical">Magical Bonuses</button>
-            </div>
-
-          </div>
-
-        </div>
 
         <p>The ability that governs bonus spells depends on what type
         of spellcaster your character is: Intelligence for wizards; Wisdom for clerics, druids,
@@ -128,17 +62,197 @@
 
       </div>
 
+      <div class="combat-container">
+
+        <div class="grid-container" grid="3">
+
+          <div class="grid-item">
+
+            <div class="input-container input-type-number">
+              <input id="attribute" class="js-magic-attribute" type="number">
+              <label for="attribute" class="input-label">Attribute</label>
+            </div>
+            
+            <div class="input-container input-type-number">
+              <input id="level" class="js-magic-spell-level" type="number">
+              <label for="level" class="input-label">Spell Level</label>
+            </div>
+
+          </div>
+
+          <div class="grid-item">
+
+            <div class="input-container input-type-checkbox">
+              <input id="gnome-magic" class="js-magic-gnome" type="checkbox">
+              <label for="gnome-magic" class="input-label">Gnome Magic</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+
+            <div class="input-container input-type-checkbox">
+              <input id="focus" class="js-magic-focus" type="checkbox">
+              <label for="focus" class="input-label">Spell Focus</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+            
+            <div class="input-container input-type-checkbox">
+              <input id="greater-focus" class="js-magic-greater-focus" type="checkbox">
+              <label for="greater-focus" class="input-label">Greater Spell Focus</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+
+            <div class="input-container input-type-checkbox">
+              <input id="elemental-focus" class="js-magic-elemental" type="checkbox">
+              <label for="elemental-focus" class="input-label">Elemental Focus</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+
+            <div class="input-container input-type-checkbox">
+              <input id="greater-elemental-focus" class="js-magic-greater-elemental" type="checkbox">
+              <label for="greater-elemental-focus" class="input-label">Greater Elemental Focus</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="grid-item"></div>
+
+        </div>
+
+        <div class="combat-actions">
+          <button class="btn js-magic-calc" data-micromodal-trigger="magical">Magical Bonuses</button>
+        </div>
+
+      </div>
+
     </section>
 
-    <!-- melee -->
+    <!-- attack -->
     <section class="section" role="region">
     
       <div class="wrapper">
+    
+        <h2 class="heading-2">Attack</h2>
+    
+        <p class="heading-paragraph">Coming soon!</p>
 
-        <h2 class="heading-2">Melee</h2>
+      </div>
 
-        <p class="heading-paragraph">Calculations for attacks, grapple, trip, disarm, etc, coming soon!</p>
+      <div class="combat-container">
+      
+        <div class="grid-container" grid="3">
+      
+          <div class="grid-item">
 
+            <div class="input-container input-type-number">
+              <input id="str-dex" class="js-attack-attribute" type="number">
+              <label for="str-dex" class="input-label">Attribute</label>
+            </div>
+
+            <div class="input-container input-type-number">
+              <input id="base-attack-bonus" class="js-attack-bab" type="number">
+              <label for="base-attack-bonus" class="input-label">Base Attack Bonus (BAB)</label>
+            </div>
+
+            <div class="input-container input-type-number">
+              <input id="weapon" class="js-attack-weapon" type="number">
+              <label for="weapon" class="input-label">Weapon Bonus</label>
+            </div>
+
+            <div class="input-container input-type-number">
+              <input id="spells" class="js-attack-spells" type="number">
+              <label for="spells" class="input-label">Spell Bonus</label>
+            </div>
+
+          </div>
+      
+          <div class="grid-item">
+
+            <div class="input-container input-type-checkbox">
+              <input id="weapon-focus" class="js-weapon-focus" type="checkbox">
+              <label for="weapon-focus" class="input-label">Weapon Focus</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+
+            <div class="input-container input-type-checkbox">
+              <input id="greater-weapon-focus" class="js-greater-weapon-focus" type="checkbox">
+              <label for="greater-weapon-focus" class="input-label">Greater Weapon Focus</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+
+          </div>
+      
+          <div class="grid-item">
+
+            <div class="input-container input-type-checkbox">
+              <input id="maneuver-bull" class="js-maneuver-bull" type="checkbox">
+              <label for="maneuver-bull" class="input-label">Improved Bull Rush</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+            
+            <div class="input-container input-type-checkbox">
+              <input id="maneuver-greater-bull" class="js-maneuver-greater-bull" type="checkbox">
+              <label for="maneuver-greater-bull" class="input-label">Greater Bull Rush</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+            
+            <div class="input-container input-type-checkbox">
+              <input id="maneuver-grapple" class="js-maneuver-grapple" type="checkbox">
+              <label for="maneuver-grapple" class="input-label">Improved Grapple</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+            
+            <div class="input-container input-type-checkbox">
+              <input id="maneuver-greater-grapple" class="js-maneuver-greater-grapple" type="checkbox">
+              <label for="maneuver-greater-grapple" class="input-label">Greater Grapple</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+            
+            <div class="input-container input-type-checkbox">
+              <input id="maneuver-trip" class="js-maneuver-trip" type="checkbox">
+              <label for="maneuver-trip" class="input-label">Improved Trip</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+            
+            <div class="input-container input-type-checkbox">
+              <input id="maneuver-greater-trip" class="js-maneuver-greater-trip" type="checkbox">
+              <label for="maneuver-greater-trip" class="input-label">Greater Trip</label>
+              <div class="input-checkbox">
+                <i class="material-icons check" aria-hidden="true">toggle_off</i>
+              </div>
+            </div>
+
+          </div>
+      
+        </div>
+
+        <div class="combat-actions">
+          <button class="btn js-attack-calc" data-micromodal-trigger="attack">Attack Bonuses</button>
+        </div>
+      
       </div>
 
     </section>
@@ -209,23 +323,58 @@
   
         <h3 class="heading-3 nav-secondary-title">Magical Calculations</h3>
         
-        <div class="magical-bonuses">
-          <strong class="magical-bonus-name">Modifier</strong>
-          <div class="magical-bonus-calc js-magical-calc-modifier">0</div>
+        <div class="combat-bonuses">
+          <strong class="combat-bonus-name">Modifier</strong>
+          <div class="combat-bonus-calc js-magical-calc-modifier">0</div>
         </div>
 
-        <div class="magical-bonuses">
-          <strong class="magical-bonus-name">Spell Level</strong>
-          <div class="magical-bonus-calc js-magical-calc-spell-lvl">0</div>
+        <div class="combat-bonuses">
+          <strong class="combat-bonus-name">Spell Level</strong>
+          <div class="combat-bonus-calc js-magical-calc-spell-lvl">0</div>
         </div>
 
-        <div class="magical-bonuses">
-          <strong class="magical-bonus-name">Spell DC</strong>
-          <div class="magical-bonus-calc js-magical-calc-spell-dc">0</div>
+        <div class="combat-bonuses">
+          <strong class="combat-bonus-name">Spell DC</strong>
+          <div class="combat-bonus-calc js-magical-calc-spell-dc">0</div>
         </div>
 
         <h3 class="header-3 nav-secondary-title">Bonus Spells</h3>
         <ul class="magical-bonus-spells js-magical-calc-bonuses"></ul>
+  
+      </nav>
+  
+    </div>
+  
+  </div>
+
+  <!-- attack -->
+  <div id="attack" class="dialog-container" aria-hidden="true">
+  
+    <div class="dialog-overlay" tabindex="-1" data-micromodal-close>
+  
+      <nav class="nav-secondary" role="navigation">
+  
+        <button class="nav-close" data-micromodal-close>
+          <span class="srt">Close magical calculations</span>
+          <i class="material-icons" aria-hidden="true" data-micromodal-close>close</i>
+        </button>
+  
+        <h3 class="heading-3 nav-secondary-title">Attack Calculations</h3>
+  
+        <div class="combat-bonuses">
+          <strong class="combat-bonus-name">Modifier</strong>
+          <div class="combat-bonus-calc js-attack-calc-modifier">0</div>
+        </div>
+
+        <div class="combat-bonuses">
+          <strong class="combat-bonus-name">Attack(s)</strong>
+          <div class="combat-bonus-calc js-attack-calc-attack">0</div>
+        </div>
+
+        <div class="combat-bonuses">
+          <strong class="combat-bonus-name">Maneuvers</strong>
+          <div class="combat-bonus-calc js-attack-calc-maneuvers">0</div>
+        </div>
   
       </nav>
   

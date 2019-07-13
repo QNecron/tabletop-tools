@@ -130,6 +130,13 @@ document.addEventListener('DOMContentLoaded', function () {
         info.appendChild(descriptionLong);
       });
 
+      var empty = document.createElement('li');
+      empty.setAttribute('role', 'alert');
+      empty.classList.add('grid-item-empty', 'search-empty');
+      empty.innerHTML = 'No results found.';
+
+      spells.appendChild(empty);
+
       SPELLS.spellInfoSetup();
 
     },

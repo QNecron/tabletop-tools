@@ -40,25 +40,6 @@
 
   <main role="main">
 
-    <!-- hero -->
-    <section class="section section-hero" role="region">
-
-      <div class="hero">
-        <!-- wish I could proper give credit / copyright -->
-        <picture class="hero-img js-hero">
-          <source srcset="images/placeholder-16-9.svg" media="(max-width: 767px)">
-          <img src="images/placeholder-16-9.svg" alt="Welcome to Tabletop Tools - Pathdinder">
-        </picture>
-        <div class="hero-overlay"></div>
-      </div>
-
-      <div class="hero-content">
-        <img class="hero-logo" src="images/logo-paizo-pathfinder-2e.png" alt="Paizo, Pathfinder">
-        <h1 class="hero-title">Tools for Pathfinder</h1>
-      </div>
-
-    </section>
-
     <!-- search -->
     <section class="section section-search" role="region">
 
@@ -74,30 +55,30 @@
     </section>
 
     <!-- feats -->
-    <section class="section" role="region">
+    <section class="section section-page-search" role="region">
 
       <div class="wrapper">
 
         <div class="heading-nav-filter">
-
+        
           <h2 class="heading-2">Feats</h2>
-
+        
           <div class="nav-filter-container">
-
+        
             <nav class="nav-filter-sticky js-sticky" role="navigation">
-
+        
               <button class="nav-filter-link" data-micromodal-trigger="filter-feats">
                 <i class="material-icons" aria-hidden="true">notes</i>
                 <span class="nav-filter-name">Filters</span>
               </button>
-
+        
             </nav>
-
+        
           </div>
-
+        
         </div>
 
-        <ul class="grid-container feat-container js-feat-list" grid="2"></ul>
+        <ul class="grid-container feat-container js-filter-result js-feat-list" grid="2"></ul>
  
       </div>
 

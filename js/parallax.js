@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
       ];
 
       var src = img[random - 1].toString();
+
+      if (!hero) return;
+
       hero.querySelector('source').setAttribute('srcset', src + '-mobile.jpg');
       hero.querySelector('img').setAttribute('src', src + '.jpg');
 

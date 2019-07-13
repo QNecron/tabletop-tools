@@ -116,6 +116,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       });
 
+      var empty = document.createElement('li');
+      empty.setAttribute('role', 'alert');
+      empty.classList.add('grid-item-empty', 'search-empty');
+      empty.innerHTML = 'No results found.';
+
+      feats.appendChild(empty);
+
       FEATS.featInfoSetup();
 
     },
