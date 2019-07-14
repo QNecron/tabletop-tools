@@ -213,6 +213,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (focus1.checked && !focus2.checked) weapon = weapon + 1;
         if (focus1.checked && focus2.checked) weapon = weapon + 2;
 
+        if (!weapon) weapon = 0;
+        if (!spells) spells = 0;
+
         switch(base) {
           case 1:
           case 2:
