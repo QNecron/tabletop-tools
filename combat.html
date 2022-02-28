@@ -33,6 +33,11 @@
           <span class="nav-filter-name">Menu</span>
         </button>
 
+        <a href="https://stoic-shockley-fdbb42.netlify.app/" class="nav-primary-link beta" target="_blank" rel="noopener noreferrer">
+          <i class="material-icons" aria-hidden="true">code</i>
+          <span class="nav-filter-name">Beta</span>
+        </a>
+
       </nav>
 
     </div>
@@ -43,13 +48,13 @@
 
     <!-- magical -->
     <section class="section section-header" role="region">
-    
+
       <div class="wrapper">
 
         <h1 class="heading-2">Magical</h1>
 
         <p class="heading-paragraph">Fill out your appropriate attribute score below, the spell
-        level of the spell you want to know about, then check which <em>(if any)</em> feats you have 
+        level of the spell you want to know about, then check which <em>(if any)</em> feats you have
         that would impact the spell DC. Upon calculation you will receive the following information:
         your attribute modifier, the spell level, the spell DC, and a complete list of bonus spell
         slots/castings your character should have.</p>
@@ -72,7 +77,7 @@
               <input id="attribute" class="js-magic-attribute" type="number">
               <label for="attribute" class="input-label">Attribute</label>
             </div>
-            
+
             <div class="input-container input-type-number">
               <input id="level" class="js-magic-spell-level" type="number">
               <label for="level" class="input-label">Spell Level</label>
@@ -97,7 +102,7 @@
                 <i class="material-icons check" aria-hidden="true">toggle_off</i>
               </div>
             </div>
-            
+
             <div class="input-container input-type-checkbox">
               <input id="greater-focus" class="js-magic-greater-focus" type="checkbox">
               <label for="greater-focus" class="input-label">Greater Spell Focus</label>
@@ -138,19 +143,19 @@
 
     <!-- attack -->
     <section class="section" role="region">
-    
+
       <div class="wrapper">
-    
+
         <h2 class="heading-2">Attack</h2>
-    
+
         <p class="heading-paragraph">Coming soon!</p>
 
       </div>
 
       <div class="combat-container">
-      
+
         <div class="grid-container" grid="3">
-      
+
           <div class="grid-item">
 
             <div class="input-container input-type-number">
@@ -174,7 +179,7 @@
             </div>
 
           </div>
-      
+
           <div class="grid-item">
 
             <div class="input-container input-type-checkbox">
@@ -194,7 +199,7 @@
             </div>
 
           </div>
-      
+
           <div class="grid-item">
 
             <div class="input-container input-type-checkbox">
@@ -204,7 +209,7 @@
                 <i class="material-icons check" aria-hidden="true">toggle_off</i>
               </div>
             </div>
-            
+
             <div class="input-container input-type-checkbox">
               <input id="maneuver-greater-bull" class="js-maneuver-greater-bull" type="checkbox">
               <label for="maneuver-greater-bull" class="input-label">Greater Bull Rush</label>
@@ -212,7 +217,7 @@
                 <i class="material-icons check" aria-hidden="true">toggle_off</i>
               </div>
             </div>
-            
+
             <div class="input-container input-type-checkbox">
               <input id="maneuver-grapple" class="js-maneuver-grapple" type="checkbox">
               <label for="maneuver-grapple" class="input-label">Improved Grapple</label>
@@ -220,7 +225,7 @@
                 <i class="material-icons check" aria-hidden="true">toggle_off</i>
               </div>
             </div>
-            
+
             <div class="input-container input-type-checkbox">
               <input id="maneuver-greater-grapple" class="js-maneuver-greater-grapple" type="checkbox">
               <label for="maneuver-greater-grapple" class="input-label">Greater Grapple</label>
@@ -228,7 +233,7 @@
                 <i class="material-icons check" aria-hidden="true">toggle_off</i>
               </div>
             </div>
-            
+
             <div class="input-container input-type-checkbox">
               <input id="maneuver-trip" class="js-maneuver-trip" type="checkbox">
               <label for="maneuver-trip" class="input-label">Improved Trip</label>
@@ -236,7 +241,7 @@
                 <i class="material-icons check" aria-hidden="true">toggle_off</i>
               </div>
             </div>
-            
+
             <div class="input-container input-type-checkbox">
               <input id="maneuver-greater-trip" class="js-maneuver-greater-trip" type="checkbox">
               <label for="maneuver-greater-trip" class="input-label">Greater Trip</label>
@@ -246,22 +251,22 @@
             </div>
 
           </div>
-      
+
         </div>
 
         <div class="combat-actions">
           <button class="btn js-attack-calc" data-micromodal-trigger="attack">Attack Bonuses</button>
         </div>
-      
+
       </div>
 
     </section>
 
     <!-- copyright -->
     <section class="section section-copyright" role="region">
-    
+
       <div class="wrapper">
-    
+
         <p class="copyright">
           This website uses trademarks and/or copyrights owned by Paizo Publishing, LLC, which are used under Paizo's
           Community Use Policy. We are expressly prohibited from charging you to use or access this content. This website is not
@@ -269,9 +274,9 @@
           please visit paizo.com/communityuse. For more information about Paizo Publishing and Paizo products, please visit
           <a href="https://paizo.com" target="_blank" rel="noopener noreferrer">paizo.com</a>.
         </p>
-    
+
       </div>
-    
+
     </section>
 
   </main>
@@ -287,11 +292,11 @@
 
   <!-- menu -->
   <div id="menu" class="dialog-container" aria-hidden="true">
-  
+
     <div class="dialog-overlay" tabindex="-1" data-micromodal-close>
-  
+
       <nav class="nav-site" role="navigation">
-  
+
         <button class="nav-close" data-micromodal-close>
           <span class="srt">Close menu</span>
           <i class="material-icons" aria-hidden="true" data-micromodal-close>close</i>
@@ -302,27 +307,27 @@
         <a href="initiative.html" class="btn-a nav-site-link">Initiative</a>
         <a href="feats.html" class="btn-a nav-site-link">Feats</a>
         <a href="spells.html" class="btn-a nav-site-link">Spells</a>
-  
+
       </nav>
-  
+
     </div>
-  
+
   </div>
 
   <!-- magical -->
   <div id="magical" class="dialog-container" aria-hidden="true">
-  
+
     <div class="dialog-overlay" tabindex="-1" data-micromodal-close>
-  
+
       <nav class="nav-secondary" role="navigation">
-  
+
         <button class="nav-close" data-micromodal-close>
           <span class="srt">Close magical calculations</span>
           <i class="material-icons" aria-hidden="true" data-micromodal-close>close</i>
         </button>
-  
+
         <h3 class="heading-3 nav-secondary-title">Magical Calculations</h3>
-        
+
         <div class="combat-bonuses">
           <strong class="combat-bonus-name">Modifier</strong>
           <div class="combat-bonus-calc js-magical-calc-modifier">0</div>
@@ -340,27 +345,27 @@
 
         <h3 class="header-3 nav-secondary-title">Bonus Spells</h3>
         <ul class="magical-bonus-spells js-magical-calc-bonuses"></ul>
-  
+
       </nav>
-  
+
     </div>
-  
+
   </div>
 
   <!-- attack -->
   <div id="attack" class="dialog-container" aria-hidden="true">
-  
+
     <div class="dialog-overlay" tabindex="-1" data-micromodal-close>
-  
+
       <nav class="nav-secondary" role="navigation">
-  
+
         <button class="nav-close" data-micromodal-close>
           <span class="srt">Close magical calculations</span>
           <i class="material-icons" aria-hidden="true" data-micromodal-close>close</i>
         </button>
-  
+
         <h3 class="heading-3 nav-secondary-title">Attack Calculations</h3>
-  
+
         <div class="combat-bonuses">
           <strong class="combat-bonus-name">Modifier</strong>
           <div class="combat-bonus-calc js-attack-calc-modifier">0</div>
@@ -375,11 +380,11 @@
           <strong class="combat-bonus-name">Maneuvers</strong>
           <div class="combat-bonus-calc js-attack-calc-maneuvers">0</div>
         </div>
-  
+
       </nav>
-  
+
     </div>
-  
+
   </div>
 
   <!-- js -->

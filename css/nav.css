@@ -8,6 +8,7 @@
 .nav-primary-link {
   border: solid 1px transparent;
   color: #f2f2f2;
+  display: flex;
   font-size: 14px;
   font-weight: 700;
   margin-right: 8px;
@@ -25,6 +26,14 @@
 
 .nav-primary-link .material-icons {
   margin-right: 4px;
+}
+
+/* beta */
+.beta {
+  margin-right: 0;
+  position: absolute;
+  top: 4px;
+  right: 0;
 }
 
 /* nav : site */

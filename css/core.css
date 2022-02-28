@@ -208,7 +208,7 @@ input[type="checkbox"]:checked ~ .input-checkbox .check {
 .btn {
   background: #202936;
   color: #f2f2f2;
-  font-family: "AI-Titles-Bold", serif;  
+  font-family: "AI-Titles-Bold", serif;
   font-size: 14px;
   padding: 0 16px;
   text-transform: uppercase;
@@ -347,6 +347,12 @@ input[type="checkbox"]:checked ~ .input-checkbox .check {
   position: fixed;
   top: -10%;
   left: 0;
+}
+
+.hero-img img {
+  height: auto;
+  width: 100%;
+  max-width: initial;
 }
 
 .hero-overlay {
